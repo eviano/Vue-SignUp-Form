@@ -66,7 +66,13 @@ export default {
         handleSubmit(){
            // validate password
            this.passwordError = this.password.length > 7 ? '' : 'Password must be alteast 8 characters'
-
+            if(!this.passwordError) {
+                console.log('Email:', this.email)
+                console.log('Password:', this.password)
+                console.log('Role:', this.role)
+                console.log('Skills:', this.skills)
+                console.log('Term Accepted:', this.terms)
+            }
         }
     }
 }
